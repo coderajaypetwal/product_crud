@@ -2,7 +2,12 @@
 git clone  https://github.com/coderajaypetwal/product_crud.git
 
 AFTER CLONE PROJECT THEN FOR INSTALL COMMPOSER : composer install
-FOR RUN THE PROJECT FOR VENDOR FOLDER
+isse  VENDOR FOLDER generate ho jayega fir 
+.env  crete karo 
+then 
+php artisan key:generate   run karo 
+
+========================================
 
 Note - after clone the project then go the project directory and then remove the git file.
 
