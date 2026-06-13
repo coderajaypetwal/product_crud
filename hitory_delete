@@ -1,0 +1,30 @@
+
+git clone  https://github.com/coderajaypetwal/product_crud.git
+
+Note - after clone the project then go the project directory and then remove the git file.
+
+FOR WINDOW SYTEM : 
+Remove-Item -Recurse -Force .git
+git status
+
+
+FOR LINUX SYSTEM :
+rm -rf .git
+git status
+
+
+For window terminal history check and remove 
+
+Get-Content (Get-PSReadLineOption).HistorySavePath               :  get history 
+Remove-Item (Get-PSReadLineOption).HistorySavePath -Force         : Delete permanantly history
+Get-Content (Get-PSReadLineOption).HistorySavePath               : again check 
+Remove-Item (Get-PSReadLineOption).HistorySavePath -Force         : Delete permanantly history
+
+
+
+For linux/ubuntu
+
+cat ~/.bash_history        : get history  
+rm ~/.bash_history         : Delete permanantly history
+cat ~/.bash_history        : again check  
+rm ~/.bash_history         : Delete permanantly history
