@@ -1,11 +1,23 @@
+install these packages for vs code:
+==================================
+github copilot chat
+laravel extenssion package
+prettier 
+==============================
+
 
 git clone  https://github.com/coderajaypetwal/product_crud.git
 
 AFTER CLONE PROJECT THEN FOR INSTALL COMMPOSER : composer install
 isse  VENDOR FOLDER generate ho jayega fir 
+
 .env  crete karo 
 then 
 php artisan key:generate   run karo 
+
+or if install composer without dependencies
+
+composer install --no-dev
 
 ========================================
 
@@ -22,6 +34,12 @@ git status
 
 
 For window terminal history check and remove 
+===============================================
+specific kuch row ke liye top current se behind 5 delelete ho jayegi - ---
+
+(Get-Content (Get-PSReadLineOption).HistorySavePath | Select-Object -SkipLast 5) |
+Set-Content (Get-PSReadLineOption).HistorySavePath
+
 
 Get-Content (Get-PSReadLineOption).HistorySavePath               :  get history 
 Remove-Item (Get-PSReadLineOption).HistorySavePath -Force         : Delete permanantly history
@@ -30,9 +48,46 @@ Remove-Item (Get-PSReadLineOption).HistorySavePath -Force         : Delete perma
 
 
 
+
+
 For linux/ubuntu
+
+for i in {1..20}; do
+    history -d $((HISTCMD-1))
+done
+history -w
+
+upper wali ko  delete krne k liye 
+
+history -d 7
+history -w
+
+Krna pdega
+
+===============================
 
 cat ~/.bash_history        : get history  
 rm ~/.bash_history         : Delete permanantly history
 cat ~/.bash_history        : again check  
 rm ~/.bash_history         : Delete permanantly history
+
+
+====================================
+Run these command for ProductCrud
+===================================
+
+composer create-project laravel/laravel productCrud
+cd productCrud
+php artisan serve
+
+php artisan make:model product -mcr
+php artisan migrate
+php artisan migrate:refresh
+php artisan storage:link
+
+php artisan optimize:clear 
+php artisan cache:clear
+php artisan config:clear
+
+=====================================
+
